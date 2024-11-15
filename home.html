@@ -5,25 +5,38 @@
         <link rel = "stylesheet" href = "style.css"/>
         <script src="script.js"></script>
         <meta charset="utf-8">
+        <title>To Do</title>
     </head>
-    <body>
-        
-        <h1>To Do List</h1>
-        <div class="Add">
-            <h2>Add</h2>
-            <div class="Item">
-                
-                <button id="AddButton" onclick="addItem()">Add</button>
-                <input type="text" id="AddText" value="Yuh"/>
-                
+    <body> 
+        <div class = "Title">
+            <h1>To Do List</h1>
+        </div>
+        <div class ="Main">
+            <div class="Column" id="To-Do">
+                <div class="Column-Title">
+                    <h2>To Do</h2>
+                </div>
+                <div class="Column-Content">
+                    <div class="Item">  
+                        <button id="AddButton" onclick="addItem()">Add</button>
+                        <input type="text" id="AddText" value="Yuh"/>     
+                    </div>
+                </div>
+            </div>
+            <div class="Column" id="Doing">
+                <div class="Column-Title">
+                    <h2>In Progress</h2>
+                </div>
+                <div class="Column-Content">
+                </div>
+            </div>
+            <div class="Column" id="Done">
+                <div class="Column-Title">
+                    <h2>Complete</h2>
+                </div>
+                <div class="Column-Content">
+                </div>
             </div>
         </div>
-        <div class="Doing" id="Doing">
-            <h2>In Progress</h2>
-        </div>
-        <div class="Done" id="Done">
-            <h2>Complete</h2>
-        </div>
-
     </body>
 </html>
