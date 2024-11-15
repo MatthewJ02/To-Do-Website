@@ -2,6 +2,7 @@ function addItem() {
     var itemText = document.getElementById("AddText").value;
     if (itemText != "") {
         var div = document.createElement("div");
+        div.setAttribute("Class", "Item");
 
         var doneButton = document.createElement("button");
         doneButton.innerHTML = "Done";
