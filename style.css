@@ -1,8 +1,66 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 h1 {
     margin: 0 auto;
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
+.Column {
+    margin: 0 auto;
+    display: block;
+    
+    width: 30%;
+}
+
 .Item-Child {
     display: inline-block;
+}
+
+.Item {
+    width: 100%;
+    background-color: purple;
+    
+}
+
+.Column-Title {
+    background-color: red;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.Column-Content {
+    background-color: yellow;
+    display: inline-block;
+}
+
+.Item {
+    min-height: 50px;
+}
+
+.Title {
+    width: 100%;
+    background-color: green;
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: black;
+}
+
+
+.Main {
+    margin: auto;
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
 }
