@@ -15,17 +15,26 @@ h2 {
     margin: 0 auto;
     display: block;
     
-    width: 30%;
+    width: 31%;
 }
+
 
 .Item-Child {
     display: inline-block;
+    width: 20%;
+}
+
+.Item-Name {
+    width: 60%;
+    text-align: center;
 }
 
 .Item {
     width: 100%;
+    min-height: 60px;
     background-color: purple;
-    
+    justify-content: center;
+    display:inline-flex;
 }
 
 .Column-Title {
@@ -39,10 +48,8 @@ h2 {
 .Column-Content {
     background-color: yellow;
     display: inline-block;
-}
-
-.Item {
-    min-height: 50px;
+    width: 100%;
+    min-height: 100px;
 }
 
 .Title {
@@ -59,7 +66,7 @@ body {
 .Main {
     margin: auto;
     width: 70%;
-    height: 50%;
+    min-height: 400px;
     display: flex;
     justify-content: center;
     background-color: blue;
