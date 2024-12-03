@@ -12,29 +12,28 @@
             <h1>To Do List</h1>
         </div>
         <div class ="Main">
-            <div class="Column" id="To-Do">
+            <div class="Column">
                 <div class="Column-Title">
                     <h2>To Do</h2>
                 </div>
-                <div class="Column-Content">
-                    <div class="Item">  
-                        <button id="AddButton" onclick="addItem()">Add</button>
-                        <input type="text" id="AddText" value="Yuh"/>     
+                <div class="Column-Content"  id="To-Do"  ondrop="drop(event)" ondragover="allowDrop(event)" dragenter="">
+                    <div class="Item" id="AddItem">
+                        <button id="itemButton" class="Item-Child" onclick="addItem()">+</button>
                     </div>
                 </div>
             </div>
-            <div class="Column" id="Doing">
+            <div class="Column">
                 <div class="Column-Title">
                     <h2>In Progress</h2>
                 </div>
-                <div class="Column-Content">
+                <div class="Column-Content" id="Doing" ondrop="drop(event)" ondragover="allowDrop(event)">
                 </div>
             </div>
-            <div class="Column" id="Done">
+            <div class="Column">
                 <div class="Column-Title">
                     <h2>Complete</h2>
                 </div>
-                <div class="Column-Content">
+                <div class="Column-Content"  id="Done"  ondrop="drop(event)" ondragover="allowDrop(event)">
                 </div>
             </div>
         </div>
