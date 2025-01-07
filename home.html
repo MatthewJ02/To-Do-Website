@@ -7,33 +7,33 @@
         <meta charset="utf-8">
         <title>To Do</title>
     </head>
-    <body> 
+    <body onload="loadPage()"> 
         <div class = "Title">
             <h1>To Do List</h1>
         </div>
         <div class ="Main">
-            <div class="Column">
+            <div class="Column" ondrop="drop(event,'To-Do'), resetColor(this)" ondragover="allowDrop(event, this)" ondragleave="resetColor(this)">
                 <div class="Column-Title">
                     <h2>To Do</h2>
                 </div>
-                <div class="Column-Content"  id="To-Do"  ondrop="drop(event)" ondragover="allowDrop(event)" dragenter="">
-                    <div class="Item" id="AddItem">
-                        <button id="itemButton" class="Item-Child" onclick="addItem()">+</button>
-                    </div>
+                <div class="Item" id="AddItem">
+                    <button id="itemButton" class="AddButton" onclick="addItem('To-Do', '', false)">+</button>
+                </div>
+                <div class="Column-Content"  id="To-Do">
                 </div>
             </div>
-            <div class="Column">
+            <div class="Column" ondrop="drop(event,'Doing'), resetColor(this)" ondragover="allowDrop(event, this)" ondragleave="resetColor(this)">
                 <div class="Column-Title">
                     <h2>In Progress</h2>
                 </div>
-                <div class="Column-Content" id="Doing" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="Column-Content" id="Doing">
                 </div>
             </div>
-            <div class="Column">
+            <div class="Column"  ondrop="drop(event,'Done'), resetColor(this)" ondragover="allowDrop(event, this)" ondragleave="resetColor(this)">
                 <div class="Column-Title">
                     <h2>Complete</h2>
                 </div>
-                <div class="Column-Content"  id="Done"  ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="Column-Content"  id="Done">
                 </div>
             </div>
         </div>
