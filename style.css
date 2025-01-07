@@ -11,17 +11,28 @@ h2 {
     text-align: center;
 }
 
+body {
+    user-select: none;
+}
+
 .Column {
     margin: 0 auto;
     display: block;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    transition: 0.1s;
     
     width: 31%;
 }
 
 
+
 .Item-Child {
     display: inline-block;
+    text-align: center;
     width: 20%;
+    height: 8%;
+    padding-bottom: 0%;
 }
 
 .Item-Name {
@@ -30,23 +41,25 @@ h2 {
 }
 
 .Item {
-    width: 100%;
+    width: 94%;
     min-height: 60px;
-    background-color: purple;
+    margin-left: 3%;
+    border-radius: 5px;
+    margin-top: 3%;
+    background-color: powderblue;
     justify-content: center;
     display:inline-flex;
 }
 
 .Column-Title {
-    background-color: red;
     padding-top: 1%;
     padding-bottom: 1%;
+    width: 90%;
+    margin-left: 5%;
     border-radius: 5px;
-    margin-top: 10px;
 }
 
 .Column-Content {
-    background-color: yellow;
     display: inline-block;
     width: 100%;
     min-height: 100px;
@@ -70,4 +83,18 @@ body {
     display: flex;
     justify-content: center;
     background-color: blue;
+}
+
+.AddButton {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    border-color: powderblue;
+    border-width: 4px;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.AddButton:hover {
+    background-color: transparent;
 }
