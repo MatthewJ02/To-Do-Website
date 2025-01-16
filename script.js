@@ -11,6 +11,7 @@ function addItem(column, text, isSaved) {
 
     var input = document.createElement("input");
     input.type = "text";
+    input.maxLength = 25;
     input.placeholder = "New Item";
     if (text != "") {
         input.value = text;
@@ -72,6 +73,7 @@ function editItem(parentDiv) {
 
     var inputText = document.createElement("input");
     inputText.setAttribute("type", "text");
+    inputText.maxLength = 25;
     inputText.value = children[1].innerHTML;
     inputText.className = "Item-Name";
     parentDiv.replaceChild(inputText, children[1]);
